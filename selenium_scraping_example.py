@@ -11,9 +11,9 @@ options = webdriver.ChromeOptions()
 options.add_argument('--start-maximized')
 options.add_argument('--disable-extensions')
 
-driver_path = 'D:\Selenium\webdrivers\chromedriver.exe'
+driver_path = 'D:\selenium-python\webdrivers\chromedriver.exe'
 
-driver = webdriver.Chrome(driver_path, chrome_options=options)
+driver = webdriver.Chrome(driver_path, options=options)
 
 # Initialize Browser
 driver.get('https://eltiempo.es')
